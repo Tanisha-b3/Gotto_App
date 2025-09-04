@@ -43,7 +43,26 @@ Bootstrap 5 HTML CSS Template
     padding: 0.25rem 0.6rem;
     border-radius: 20px;
     font-size: 0.85rem;
+    }
+
+    #mini-finance-footer {
+        text-align: center;
+    font-size: 1.2rem;       /* slightly larger than small text */
+    line-height: 1.5;          /* spacing for readability */
+    color: #333333;            /* dark enough for AA contrast on light background */
+    letter-spacing: 0.5px;
+    margin-top: 1rem;
 }
+
+@media (max-width: 768px) {
+    #mini-finance-footer {
+        font-size: 0.8rem;
+        line-height: 1.4;
+        text-align: center;
+        padding: 0 10px;
+    }
+}
+
 </style>
   
 </head>
@@ -1205,10 +1224,15 @@ Bootstrap 5 HTML CSS Template
         </main>
 
         <footer class="site-footer">
+             <div id="mini-finance-footer" class="copyright-text"></div>
+
             <div class="container">
+                
+              
                 <div class="row">
 
                     <div class="col-lg-4 col-md-6 col-12 mb-3">
+
                         <div class="d-flex align-items-center mb-4">
                             <img src="images/logo.png" class="img-fluid logo-image">
 
@@ -1217,6 +1241,7 @@ Bootstrap 5 HTML CSS Template
                                 <small class="logo-slogan">Online Job Portal</small>
                             </div>
                         </div>  
+
 
                         <p class="mb-2">
                             <i class="custom-icon bi-globe me-1"></i>
@@ -1294,7 +1319,7 @@ Bootstrap 5 HTML CSS Template
             <div class="site-footer-bottom">
                 <div class="container">
                     <div class="row">
-                            <div id="mini-finance-footer" class="copyright-text"></div>
+                            
                         <div class="col-lg-4 col-12 d-flex align-items-center">
                             <p class="copyright-text">Copyright © Gotto Job 2048</p>
 
@@ -1336,6 +1361,7 @@ Bootstrap 5 HTML CSS Template
                         <a class="back-top-icon bi-arrow-up smoothscroll d-flex justify-content-center align-items-center" href="#top"></a>
 
                     </div>
+                    
                 </div>
             </div>
         </footer>
@@ -1350,9 +1376,9 @@ Bootstrap 5 HTML CSS Template
 <script>
   // Configuration
   const version = "v1.0";
-  const author = "Tanisha Borana"; // replace with your name
+  const author = "Tanisha Borana";
+  const rev = "abc123"; // short commit hash or env tag
 
-  // Get today's date in "DD Mon YYYY" format
   const today = new Date();
   const day = String(today.getDate()).padStart(2, "0");
   const monthNames = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
@@ -1360,11 +1386,9 @@ Bootstrap 5 HTML CSS Template
   const year = today.getFullYear();
   const formattedDate = `${day} ${month} ${year}`;
 
-  // Build footer text
-  const footerText = `Mini Finance ${version} — Deployed on ${formattedDate} — By ${author}`;
-
-  // Insert into footer div
+  const footerText = `Mini Finance ${version} — Deployed on ${formattedDate} — By ${author} — rev: ${rev}`;
   document.getElementById("mini-finance-footer").textContent = footerText;
 </script>
+
     </body>
 </html>
