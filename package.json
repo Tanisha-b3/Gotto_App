@@ -1,0 +1,26 @@
+{
+  "name": "2134_gotto_job",
+  "version": "1.0.0",
+  "description": "\"# Gotto_App\"",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tanisha-b3/Gotto_App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Tanisha-b3/Gotto_App/issues"
+  },
+  "homepage": "https://github.com/Tanisha-b3/Gotto_App#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  }
+}
